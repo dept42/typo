@@ -12,8 +12,8 @@ module Ckeditor
   PLUGIN_CONTROLLER_PATH = "#{PLUGIN_PATH}/app/controllers"
   PLUGIN_VIEWS_PATH = "#{PLUGIN_PATH}/app/views"
   PLUGIN_HELPER_PATH = "#{PLUGIN_PATH}/app/helpers"
-  PLUGIN_FILE_MANAGER_URI = '/fm/filemanager'
-  PLUGIN_FILE_MANAGER_UPLOAD_URI = '/ckeditor/upload'
+  PLUGIN_FILE_MANAGER_URI = ''
+  PLUGIN_FILE_MANAGER_UPLOAD_URI = '/blog/ckeditor/upload'
 
   module Helper
     def ckeditor_textarea(object, field, options = {})
