@@ -22,7 +22,7 @@
                     <%= link_to _("Articles"), {:controller => "articles", :action => "archives"} if (controller.controller_name != "index" )%>
                 </li>
                 <li class="page_item <%= 'current_page_item' if (controller.controller_name == "articles" and controller.action_name == "view_page" and params[:name].to_s == 'about') %>">
-                    <%= link_to _("About"), this_blog.base_url + "/pages/about" %>
+                    <%= link_to _(""), this_blog.base_url + "/pages/about" %>
                 </li>
             </ul>
         </div>
