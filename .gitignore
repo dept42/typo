@@ -13,6 +13,8 @@ installer/rails_installer.yml
 /public/javascripts/all.js
 /public/stylesheets/theme
 /public/stylesheets/all.css
+/public/index.html
+/public/20*
 tmp/*
 /coverage/
 nbproject
