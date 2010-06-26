@@ -14,6 +14,9 @@ installer/rails_installer.yml
 /public/stylesheets/theme
 /public/stylesheets/all.css
 /public/index.html
+/public/archives.html
+/public/category
+/public/tag
 /public/20*
 tmp/*
 /coverage/
