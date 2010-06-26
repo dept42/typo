@@ -37,21 +37,21 @@ class GroupingController < ContentController
     set_noindex
     @grouping = grouping_class.find_by_permalink(params[:id])
 
-    @page_title = "#{_(self.class.to_s.sub(/Controller$/,'').singularize)} #{@grouping.name}, "
+    @page_title = "#{_(self.class.to_s.sub(/Controller$/,'').singularize)} #{@grouping.name} "
 
-    if @grouping.respond_to? :description and
-        not @grouping.description.nil?
-      @page_title += @grouping.description
-    else
-      @page_title += "#{_('everything about')} "
-
-      if @grouping.respond_to? :display_name and
-          not @grouping.display_name.nil?
-        @page_title += @grouping.display_name
-      else
-        @page_title += @grouping.name
-      end
-    end
+    #if @grouping.respond_to? :description and
+    #    not @grouping.description.nil?
+    #  @page_title += @grouping.description
+    #else
+    #  @page_title += "#{_('everything about')} "
+#
+#      if @grouping.respond_to? :display_name and
+#          not @grouping.display_name.nil?
+#        @page_title += @grouping.display_name
+#      else
+#        @page_title += @grouping.name
+#      end
+#    end
 
     @page_title << " page " << params[:page] if params[:page]
     @description = (@grouping.description.blank?) ? "" : @grouping.description
